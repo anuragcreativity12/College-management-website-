@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartCampus — Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+
+    <div class="brand">
+      <span>🎓</span>
+      <strong>SmartCampus</strong>
+    </div>
+
+    <nav>
+
+      <button class="nav-item active" data-page="dashboard">
+        🏠 <span>Dashboard</span>
+      </button>
+
+      <button class="nav-item" data-page="timetable">
+        📅 <span>Timetable</span>
+      </button>
+
+      <button class="nav-item" data-page="attendance">
+        📊 <span>Attendance</span>
+      </button>
+
+      <button class="nav-item" data-page="assignments">
+        📝 <span>Assignments</span>
+      </button>
+
+      <button class="nav-item" data-page="materials">
+        📚 <span>Materials</span>
+      </button>
+
+      <button class="nav-item" data-page="exams">
+        📝 <span>Exams</span>
+      </button>
+
+      <button class="nav-item" data-page="results">
+        📈 <span>Results</span>
+      </button>
+
+      <button class="nav-item" data-page="fees">
+        💰 <span>Fees</span>
+      </button>
+
+      <button class="nav-item" data-page="notices">
+        📢 <span>Notices</span>
+      </button>
+
+      <button class="nav-item" data-page="faculty">
+        👨‍🏫 <span>Faculty</span>
+      </button>
+
+      <button class="nav-item" data-page="helpdesk">
+        🎫 <span>Helpdesk</span>
+      </button>
+
+      <button class="nav-item" data-page="resume">
+        💼 <span>Resume & Career</span>
+      </button>
+
+      <button class="nav-item" data-page="placements">
+        🎯 <span>Placements</span>
+      </button>
+
+      <button class="nav-item" data-page="settings">
+        ⚙️ <span>Settings</span>
+      </button>
+
+    </nav>
+
+  </aside>
+
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- TOP BAR -->
+    <header class="topbar">
+
+      <button class="menu-btn" id="menuBtn">
+        ☰
+      </button>
+
+      <div class="mobile-title">
+        🎓 SmartCampus
+      </div>
+
+      <div class="top-actions">
+
+        <button class="icon-btn" id="notificationBtn">
+          🔔
+          <span class="dot"></span>
+        </button>
+
+        <button class="profile-btn" id="profileBtn">
+          <span class="avatar">A</span>
+          Anurag
+          <span>⌄</span>
+        </button>
+
+        <div class="profile-menu hidden" id="profileMenu">
+
+          <button onclick="showPage('settings')">
+            ⚙️ Settings
+          </button>
+
+          <button onclick="alert('Logout demo')">
+            🚪 Logout
+          </button>
+
+        </div>
+
+      </div>
+
+    </header>
+
+
+    <!-- PAGE CONTENT -->
+
+    <section id="content" class="content"></section>
+
+  </main>
+
+</div>
+
+
+<!-- TOAST -->
+
+<div class="toast hidden" id="toast"></div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
